@@ -3,4 +3,22 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="StringVitaminas">
+        <item>Escolha Uma</item>
+        <item>Vitamina A</item>
+        <item>Vitamina C</item>
+        <item>Vitamina D</item>
+        <item>Vitamina E</item>
+        <item>Vitamina K</item>
+        <item>Complexo B</item>
+    </string-array>
+
+    <string-array name="StringMinerais">
+        <item>Escolha Um</item>
+        <item>Calcio</item>
+        <item>Ferro</item>
+        <item>Proteína</item>
+    </string-array>
+
 </resources>

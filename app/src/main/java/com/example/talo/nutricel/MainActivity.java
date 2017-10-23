@@ -2,38 +2,121 @@ package com.example.talo.nutricel;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
+    private String vitamina;
+    private String mineral;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+
+        // Spinner Vitaminas
+        Spinner spinnerVitaminas = (Spinner) findViewById(R.id.vitaminas);
+        // Criando Spinner Padrão com array de string.
+        ArrayAdapter<CharSequence> staticAdapter1 = ArrayAdapter
+                .createFromResource(this, R.array.StringVitaminas, android.R.layout.simple_spinner_item);
+        // Layout para escolhas.
+        staticAdapter1
+                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Aplicando adapter ao spinner
+        spinnerVitaminas.setAdapter(staticAdapter1);
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+        // Spinner Minerais
+        Spinner spinnerMinerais = (Spinner) findViewById(R.id.minerais);
+        // Criando Spinner Padrão com array de string.
+        ArrayAdapter<CharSequence> staticAdapter2 = ArrayAdapter
+                .createFromResource(this, R.array.StringMinerais, android.R.layout.simple_spinner_item);
+        // Layout para escolhas.
+        staticAdapter2
+                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Aplicando adapter ao spinner
+        spinnerMinerais.setAdapter(staticAdapter2);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        // Spinner Vitaminas - Adicionando evento para seleção por ID.
+        spinnerVitaminas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-        return super.onOptionsItemSelected(item);
+                // Pega nome pela posição
+                vitamina = adapterView.getItemAtPosition(i).toString();
+
+                // Imprime um Toast na tela com a vitamina selecionada
+                Toast.makeText(MainActivity.this, "Vitamina Selecionada: " + vitamina, Toast.LENGTH_LONG).show();
+                switch (i) {
+                    case 0:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                    case 1:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                    case 2:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                    case 3:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                    case 4:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                    case 5:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                    case 6:
+                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        break;
+                }
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+
+        });
+
+        // Spinner Minerais - Adicionando evento para seleção por ID.
+        spinnerMinerais.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                // Pega nome pela posição
+                mineral = adapterView.getItemAtPosition(i).toString();
+
+                // Imprime um Toast na tela com o mineral escolhido
+                Toast.makeText(MainActivity.this, "Mineral Selecionado: " + mineral, Toast.LENGTH_LONG).show();
+                switch (i) {
+                    case 0:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                    case 1:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                    case 2:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                    case 3:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                    case 4:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                    case 5:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                    case 6:
+                        //setar intent para mostrar os alimentos de acordo com os minerais
+                        break;
+                }
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+
+        });
     }
 }
