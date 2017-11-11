@@ -42,28 +42,29 @@
         <Spinner
             android:id="@+id/vitaminas"
             android:layout_width="match_parent"
-            android:layout_height="100px"
+            android:layout_height="120px"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
             android:animateLayoutChanges="true"
             android:dropDownWidth="match_parent"
             android:gravity="center"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:background="@drawable/txtbox_row_border"/>
 
         <Spinner
             android:id="@+id/minerais"
             android:layout_width="match_parent"
-            android:layout_height="100px"
+            android:layout_height="120px"
+            android:layout_marginTop="20dp"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
             android:animateLayoutChanges="true"
             android:dropDownWidth="match_parent"
             android:gravity="center"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:background="@drawable/txtbox_row_border"
+            />
 
     </LinearLayout>
 
