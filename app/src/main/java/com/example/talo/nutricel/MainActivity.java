@@ -1,15 +1,12 @@
 package com.example.talo.nutricel;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private String vitamina;
@@ -52,27 +49,43 @@ public class MainActivity extends Activity {
 
                 switch (i) {
                     case 0:
-                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
                         break;
                     case 1:
-                        Intent intent = new Intent(MainActivity.this, ListActivityAlimentosVitamina.class);
-                        startActivity(intent);
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
+                        Intent intentA = new Intent(MainActivity.this, ListActivityAlimentosVitaminaA.class);
+                        startActivity(intentA);
                         MainActivity.this.finish();
                         break;
                     case 2:
-                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
+                        Intent intentC = new Intent(MainActivity.this, ListActivityAlimentosVitaminaC.class);
+                        startActivity(intentC);
+                        MainActivity.this.finish();
                         break;
                     case 3:
-                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
+                        Intent intentD = new Intent(MainActivity.this, ListActivityAlimentosVitaminaD.class);
+                        startActivity(intentD);
+                        MainActivity.this.finish();
                         break;
                     case 4:
-                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
+                        Intent intentE = new Intent(MainActivity.this, ListActivityAlimentosVitaminaE.class);
+                        startActivity(intentE);
+                        MainActivity.this.finish();
                         break;
                     case 5:
-                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
+                        Intent intentK = new Intent(MainActivity.this, ListActivityAlimentosVitaminaK.class);
+                        startActivity(intentK);
+                        MainActivity.this.finish();
                         break;
                     case 6:
-                        //setar intent para mostrar os alimentos de acordo com as vitaminas
+                        //setar intent para mostrar os alimentos de acordo com a vitamina selecionada
+                        Intent intentB = new Intent(MainActivity.this, ListActivityAlimentosComplexoB.class);
+                        startActivity(intentB);
+                        MainActivity.this.finish();
                         break;
                 }
             }
@@ -95,12 +108,21 @@ public class MainActivity extends Activity {
                         break;
                     case 1:
                         //setar intent para mostrar os alimentos de acordo com os minerais
+                        Intent intentCalcio = new Intent(MainActivity.this, ListActivityAlimentosCalcio.class);
+                        startActivity(intentCalcio);
+                        MainActivity.this.finish();
                         break;
                     case 2:
                         //setar intent para mostrar os alimentos de acordo com os minerais
+                        Intent intentFerro = new Intent(MainActivity.this, ListActivityAlimentosFerro.class);
+                        startActivity(intentFerro);
+                        MainActivity.this.finish();
                         break;
                     case 3:
                         //setar intent para mostrar os alimentos de acordo com os minerais
+                        Intent intentProteina = new Intent(MainActivity.this, ListActivityAlimentosProteina.class);
+                        startActivity(intentProteina);
+                        MainActivity.this.finish();
                         break;
                 }
             }

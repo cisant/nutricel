@@ -10,12 +10,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ListAlimentosVitaminaAdapter extends ArrayAdapter<AlimentosVitamina> {
+public class ListAlimentosVitaminaAdapterMCG extends ArrayAdapter<AlimentosVitamina> {
 
     private Context context;
     private List<AlimentosVitamina> alimentos = null;
 
-    public ListAlimentosVitaminaAdapter(Context context, List<AlimentosVitamina> alimentos) {
+    public ListAlimentosVitaminaAdapterMCG(Context context, List<AlimentosVitamina> alimentos) {
         super(context,0, alimentos);
         this.alimentos = alimentos;
         this.context = context;
@@ -43,7 +43,7 @@ public class ListAlimentosVitaminaAdapter extends ArrayAdapter<AlimentosVitamina
         textViewVitamina.setText(textoVitamina);
 
         TextView textViewQuantidade = (TextView)view.findViewById(R.id.text_view_quantidade);
-        String textoQuantidade = "Quantidade: " + String.valueOf(ali.getQuantidade()) + " mg";
+        String textoQuantidade = "Quantidade: " + String.valueOf(ali.getQuantidade()) + " mcg";
         textViewQuantidade.setText(textoQuantidade);
 
         return view;

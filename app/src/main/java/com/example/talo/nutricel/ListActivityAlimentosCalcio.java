@@ -3,14 +3,11 @@ package com.example.talo.nutricel;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListActivityAlimentosVitamina extends ListActivity {
+public class ListActivityAlimentosCalcio extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,18 +22,18 @@ public class ListActivityAlimentosVitamina extends ListActivity {
 
     private List<AlimentosVitamina> gerarAlimento() {
         List<AlimentosVitamina> alimentos = new ArrayList<AlimentosVitamina>();
-        alimentos.add(criarAlimento("Tomate", "A" ,60, R.drawable.tomate));
-        alimentos.add(criarAlimento("Mamão", "A" ,148, R.drawable.mamao));
-        alimentos.add(criarAlimento("Mamão", "A" ,148, R.drawable.mamao));
-        alimentos.add(criarAlimento("Mamão", "A" ,148, R.drawable.mamao));
-        alimentos.add(criarAlimento("Mamão", "A" ,148, R.drawable.mamao));
+        alimentos.add(criarAlimento("Castanha do Pará", "Calcio" ,123, R.drawable.castanhapara,70));
+        alimentos.add(criarAlimento("Feijão de Soja", "Calcio" ,119, R.drawable.feijaosoja,86));
+        alimentos.add(criarAlimento("Quiabo", "Calcio" ,50, R.drawable.quiabo,92));
+        alimentos.add(criarAlimento("Ameixas Secas", "Calcio" ,43, R.drawable.ameixaseca,85));
+        alimentos.add(criarAlimento("Espinafre", "Calcio" ,140, R.drawable.espinafre,95));
 
         return alimentos;
     }
 
-    private AlimentosVitamina criarAlimento(String nome, String vitamina, int quantidade, int image) {
-        AlimentosVitamina ali = new AlimentosVitamina(nome, vitamina, quantidade, image);
-        return ali;
+    private AlimentosVitamina criarAlimento(String nome, String vitamina, double quantidade, int image, int porcao) {
+        AlimentosVitamina aliC = new AlimentosVitamina(nome, vitamina, quantidade, image, porcao);
+        return aliC;
     }
 
     @Override

@@ -1,23 +1,21 @@
 package com.example.talo.nutricel;
 
-/**
- * Created by Silvia on 11/11/2017.
- */
-
 public class AlimentosVitamina {
     private int imagem;
     private String nome;
     public String vitamina;
-    private int quantidade;
+    private double quantidade;
+    private int porcao;
 
     public AlimentosVitamina() {
     }
 
-    public AlimentosVitamina(String nome, String vitamina, int quantidade, int imagem) {
+    public AlimentosVitamina(String nome, String vitamina, double quantidade, int imagem, int porcao) {
         super();
         this.nome = nome;
         this.vitamina = vitamina;
         this.quantidade = quantidade;
+        this.porcao = porcao;
         this.imagem = imagem;
     }
 
@@ -37,11 +35,11 @@ public class AlimentosVitamina {
         this.vitamina = nome;
     }
 
-    public int getQuantidade() {
+    public double getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
+    public void setQuantidade(double quantidade) {
         this.quantidade = quantidade;
     }
 
@@ -51,6 +49,14 @@ public class AlimentosVitamina {
 
     public void setImagem(int imagem) {
         this.imagem = imagem;
+    }
+
+    public int getPorcao() {
+        return porcao;
+    }
+
+    public void setPorcao(int porcao) {
+        this.porcao = porcao;
     }
 
     @Override

@@ -17,7 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ListActivityAlimentosVitamina" />
+        <activity android:name=".ListActivityAlimentosVitaminaA" />
+        <activity android:name=".ListActivityAlimentosVitaminaC" />
+        <activity android:name=".ListActivityAlimentosVitaminaD" />
+        <activity android:name=".ListActivityAlimentosVitaminaE" />
+        <activity android:name=".ListActivityAlimentosVitaminaK" />
+        <activity android:name=".ListActivityAlimentosComplexoB" />
+        <activity android:name=".ListActivityAlimentosCalcio" />
+        <activity android:name=".ListActivityAlimentosFerro" />
+        <activity android:name=".ListActivityAlimentosProteina" />
     </application>
 
 </manifest>

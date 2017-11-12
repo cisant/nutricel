@@ -39,6 +39,12 @@
                 android:textColor="#27ae60"/>
 
             <TextView
+                android:id="@+id/text_view_porcao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TextView
                 android:id="@+id/text_view_vitamina"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,6 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp" />
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
