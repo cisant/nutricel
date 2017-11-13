@@ -14,7 +14,7 @@
         android:id="@+id/splash"
         android:layout_width="292dp"
         android:layout_height="258dp"
-        android:background="@drawable/nutricel2"
-        android:layout_weight="0.12" />
+        android:layout_weight="0.12"
+        android:background="@drawable/nutricel2" />
 
 </LinearLayout>
