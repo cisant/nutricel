@@ -22,11 +22,11 @@ public class ListActivityAlimentosCalcio extends ListActivity {
 
     private List<AlimentosVitamina> gerarAlimento() {
         List<AlimentosVitamina> alimentos = new ArrayList<AlimentosVitamina>();
-        alimentos.add(criarAlimento("Castanha do Pará", "Calcio" ,123, R.drawable.castanhapara,70));
-        alimentos.add(criarAlimento("Feijão de Soja", "Calcio" ,119, R.drawable.feijaosoja,86));
-        alimentos.add(criarAlimento("Quiabo", "Calcio" ,50, R.drawable.quiabo,92));
-        alimentos.add(criarAlimento("Ameixas Secas", "Calcio" ,43, R.drawable.ameixaseca,85));
-        alimentos.add(criarAlimento("Espinafre", "Calcio" ,140, R.drawable.espinafre,95));
+        alimentos.add(criarAlimento("Castanha do Pará", "Cálcio" ,123, R.drawable.castanhapara,70));
+        alimentos.add(criarAlimento("Feijão de Soja", "Cálcio" ,119, R.drawable.feijaosoja,86));
+        alimentos.add(criarAlimento("Quiabo", "Cálcio" ,50, R.drawable.quiabo,92));
+        alimentos.add(criarAlimento("Ameixas Secas", "Cálcio" ,43, R.drawable.ameixaseca,85));
+        alimentos.add(criarAlimento("Espinafre", "Cálcio" ,140, R.drawable.espinafre,95));
 
         return alimentos;
     }

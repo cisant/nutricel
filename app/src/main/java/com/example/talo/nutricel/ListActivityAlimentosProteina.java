@@ -22,10 +22,10 @@ public class ListActivityAlimentosProteina extends ListActivity {
 
     private List<AlimentosVitamina> gerarAlimento() {
         List<AlimentosVitamina> alimentos = new ArrayList<AlimentosVitamina>();
-        alimentos.add(criarAlimento("Carne de Frango", "Proteina" ,32.8, R.drawable.frango,100));
-        alimentos.add(criarAlimento("Feijão", "Proteina" ,6.6, R.drawable.feijao,100));
-        alimentos.add(criarAlimento("Carne de Vaca", "Proteina" ,26.4, R.drawable.vaca,100));
-        alimentos.add(criarAlimento("Soja", "Proteina",12.5, R.drawable.soja,100));
+        alimentos.add(criarAlimento("Carne de Frango", "Proteína" ,32.8, R.drawable.frango,100));
+        alimentos.add(criarAlimento("Feijão", "Proteína" ,6.6, R.drawable.feijao,100));
+        alimentos.add(criarAlimento("Carne de Vaca", "Proteína" ,26.4, R.drawable.vaca,100));
+        alimentos.add(criarAlimento("Soja", "Proteína",12.5, R.drawable.soja,100));
 
         return alimentos;
     }
